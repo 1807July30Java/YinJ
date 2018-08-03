@@ -64,7 +64,7 @@ public class Driver {
 			
 		}
 		try {
-			System.out.println(String.format("%0$ %1$ %2$ = %3$", arg1,op,arg2, Calculator.calculate(op, arg1,arg2)));
+			System.out.println(String.format("%s %s %s = %s", arg1.toString(),op,arg2.toString(), Calculator.calculate(op, arg1,arg2).toString()));
 		}catch (ArithmeticException e) {
 			System.out.println("Divide by zero");
 		}catch (IllegalOperatorException e) {
